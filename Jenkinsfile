@@ -16,6 +16,8 @@ pipeline {
 				}			
             }
             steps {
+				echo ${CI}
+				
 				//Build your code
 				//Run your Unit Tests if you are TDD guy
 				//Add steps to checkin to Main Branch
@@ -54,8 +56,8 @@ pipeline {
             }
 	        steps {
                 sh "echo $pwd"
-				javac -cp .:bin:ext/* -d bin/ src/test/mf/com/*.java
-				java -cp .:bin:ext/* org.junit.runner.JUnitCore test.mf.com.CheckHiddenMessage
+				sh "javac -cp .:bin:ext/* -d bin/ src/test/mf/com/*.java"
+				sh "java -cp .:bin:ext/* org.junit.runner.JUnitCore test.mf.com.CheckHiddenMessage"
 				
 	        }
         }
