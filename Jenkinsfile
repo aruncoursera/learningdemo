@@ -16,7 +16,8 @@ pipeline {
 				}			
             }
             steps {
-				echo ${CI}
+				sh "echo ${CI}"
+				echo CI
 				
 				//Build your code
 				//Run your Unit Tests if you are TDD guy
