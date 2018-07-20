@@ -61,9 +61,8 @@ pipeline {
             }
 	        steps {
                 sh "echo $pwd"
-				sh "cd ${WORKSPACE}/HiddenMessage/"
-				sh "sh test.sh"
-				
+				sh "cd ${WORKSPACE}/HiddenMessage/ ; sh test.sh"
+				sh "ls -lrt "
 	        }
         }
     }
