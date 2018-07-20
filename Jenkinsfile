@@ -16,6 +16,7 @@ pipeline {
 				}			
             }
             steps {
+				//example to print variables
 				sh "echo ${CI}"
 				echo CI
 				
