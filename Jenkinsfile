@@ -62,8 +62,7 @@ pipeline {
 	        steps {
                 sh "echo $pwd"
 				sh "cd ${WORKSPACE}/HiddenMessage/"
-				sh "javac -cp .:bin:ext/* -d bin/ src/test/mf/com/*.java"
-				sh "java -cp .:bin:ext/* org.junit.runner.JUnitCore test.mf.com.CheckHiddenMessage"
+				sh "sh test.sh"
 				
 	        }
         }
