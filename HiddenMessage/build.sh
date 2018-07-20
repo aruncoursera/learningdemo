@@ -30,4 +30,4 @@ tar -cvf hiddenmessages.tar etc/
 
 ## Place Content
 mkdir -p output/
-cp hiddenmessages.tar  output/
+mv hiddenmessages.tar  output/
