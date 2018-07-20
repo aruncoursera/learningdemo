@@ -25,7 +25,7 @@ public class HiddenMessageReader {
 	// Methods
 	
 	public boolean checkHiddenWorld() {
-		System.out.println(worldfilepath);
+		System.out.println("FILEPATH : "+worldfilepath);
 		File fileObj = new File (worldfilepath);
 		return fileObj.exists();
 	}
