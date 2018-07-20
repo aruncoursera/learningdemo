@@ -27,7 +27,7 @@ pipeline {
 				sh "cd HiddenMessage/ ; sh build.sh"
 				
 				//Add steps to copy the latest file 
-				scp HiddenMessage/output/hiddenmessages.tar ftpuser\@164.99.111.116://home/ftpuser/latest/
+				scp HiddenMessage/output/hiddenmessages.tar ftpuser\\@164.99.111.116:/home/ftpuser/latest/
 	        }
         }
 	
@@ -45,7 +45,7 @@ pipeline {
 				//Add steps to bundle
 				//Run Your Tests
 				sh "mkdir -p ~/testdir; cd  ~/testdir "
-				sh "scp ftpuser\@164.99.111.116://home/ftpuser/latest/ ./"
+				sh "scp ftpuser\\@164.99.111.116://home/ftpuser/latest/ ./"
 				sh "tar -xvf hiddenmessages.tar"
     	
 			}
