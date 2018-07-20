@@ -9,7 +9,7 @@ public class HiddenMessageReader {
 	
 	
 	//Known Values
-	String directoryName = "~/testdir/etc";
+	String directoryName = "/var/lib/jenkins/testdir/etc";
 	String worldFile = "HiddenWorld.txt";
 	String universeFile = "HiddenUniverse.txt";
 	
